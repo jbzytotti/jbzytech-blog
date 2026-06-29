@@ -5,7 +5,7 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
 
-const SITE_URL = process.env.SITE_URL || "https://jbzytech.pages.dev";
+const SITE_URL = process.env.SITE_URL || "https://jbzytechblog.cc.cd";
 const postsDir = path.join(root, "content", "posts");
 const publicDir = path.join(root, "public");
 
