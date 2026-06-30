@@ -92,8 +92,8 @@ featuredImage: "https://i.ibb.co/YBjt10sR/Gemini-Generated-Image-7r8l5g7r8l5g7r8
 
 | المزود | مناسب لـ | نظام التشغيل | الذاكرة (RAM) | المدة | السرعة | التقييم |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| FreeRDP.edu.pl | الطلاب | Windows/Linux | متغير | مدى الحياة | عالية | 5/5 |
-| RDPHostings | الجميع | جميع الأنظمة | 32 جيجابايت | مدى الحياة | عالية جدًا | 5/5 |
+| [FreeRDP.edu.pl](https://freerdp.edu.pl/) | الطلاب | Windows/Linux | متغير | مدى الحياة | عالية | 5/5 |
+| [RDPHostings](https://rdphostings.com/) | الجميع | جميع الأنظمة | 32 جيجابايت | مدى الحياة | عالية جدًا | 5/5 |
 | Oracle Cloud | المطورين | Linux (XRDP) | 24 جيجابايت | مدى الحياة | عالية جدًا | 4/5 |
 | Google Cloud | تجريبي | Linux | 1 جيجابايت | مدى الحياة | منخفضة | 3/5 |
 | Microsoft Azure | الشركات | Windows | 0.5-1 جيجابايت | 12 شهرًا | بطيئة | 3/5 |
