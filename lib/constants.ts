@@ -1,7 +1,7 @@
 import type { CategoryMap } from "./types";
 
 export const SITE_NAME = "JBZY TECH";
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://jbzytechblog.cc.cd";
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://jbzyg.cc.cd";
 export const SITE_DESCRIPTION = "مدونة تقنية عربية متخصصة في الربح من الإنترنت، السيو، بلوجر، الذكاء الاصطناعي، العملات الرقمية، والتقنية";
 export const SITE_LANG = "ar";
 export const SITE_DIR = "rtl";
