@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  body {
+    @apply bg-white text-gray-900 dark:bg-[#0F172A] dark:text-gray-100;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .prose-custom {
+    max-width: none;
+  }
+  .prose-custom h1 {
+    @apply text-3xl font-bold mb-6 text-gray-900 dark:text-white;
+  }
+  .prose-custom h2 {
+    @apply text-2xl font-bold mt-10 mb-4 text-gray-900 dark:text-white;
+  }
+  .prose-custom h3 {
+    @apply text-xl font-bold mt-8 mb-3 text-gray-900 dark:text-white;
+  }
+  .prose-custom p {
+    @apply mb-4 leading-relaxed text-gray-700 dark:text-gray-300;
+  }
+  .prose-custom a {
+    @apply text-[#2563EB] hover:underline;
+  }
+  .prose-custom ul {
+    @apply mb-4 pr-6 list-disc;
+  }
+  .prose-custom ol {
+    @apply mb-4 pr-6 list-decimal;
+  }
+  .prose-custom li {
+    @apply mb-2 text-gray-700 dark:text-gray-300;
+  }
+  .prose-custom blockquote {
+    @apply border-r-4 border-[#2563EB] pr-4 mr-0 my-6 text-gray-600 dark:text-gray-400 italic;
+  }
+  .prose-custom img {
+    @apply rounded-xl w-full my-8;
+  }
+  .prose-custom pre {
+    @apply bg-[#1e293b] text-gray-100 rounded-xl p-4 my-6 overflow-x-auto text-sm;
+    direction: ltr;
+  }
+  .prose-custom code {
+    @apply bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded text-sm;
+  }
+  .prose-custom pre code {
+    @apply bg-transparent p-0;
+  }
+  .prose-custom table {
+    @apply w-full my-6 border-collapse;
+  }
+  .prose-custom th {
+    @apply bg-gray-100 dark:bg-gray-800 px-4 py-3 text-right font-bold text-gray-900 dark:text-white border border-gray-200 dark:border-gray-700;
+  }
+  .prose-custom td {
+    @apply px-4 py-3 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700;
+  }
+  .prose-custom hr {
+    @apply my-8 border-gray-200 dark:border-gray-800;
+  }
+  .prose-custom .callout {
+    @apply p-4 rounded-xl mb-4 border-r-4;
+  }
+  .prose-custom .callout-info {
+    @apply bg-blue-50 dark:bg-blue-900/20 border-blue-500 text-gray-700 dark:text-gray-300;
+  }
+  .prose-custom .callout-warning {
+    @apply bg-yellow-50 dark:bg-yellow-900/20 border-yellow-500 text-gray-700 dark:text-gray-300;
+  }
+  .prose-custom .callout-tip {
+    @apply bg-green-50 dark:bg-green-900/20 border-green-500 text-gray-700 dark:text-gray-300;
+  }
+  .prose-custom .callout-danger {
+    @apply bg-red-50 dark:bg-red-900/20 border-red-500 text-gray-700 dark:text-gray-300;
+  }
+  .prose-custom .faq-section {
+    @apply my-8;
+  }
+  .prose-custom .faq-item {
+    @apply mb-4 p-4 bg-gray-50 dark:bg-gray-800 rounded-xl;
+  }
+  .prose-custom .faq-item h3 {
+    @apply text-lg font-bold mb-2 mt-0;
+  }
+  .prose-custom .aspect-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    @apply my-6 rounded-xl;
+  }
+  .prose-custom .aspect-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .prose-custom table {
+    font-size: 0.875rem;
+  }
+  .prose-custom h1 { font-size: 1.5rem; }
+  .prose-custom h2 { font-size: 1.25rem; }
+}
